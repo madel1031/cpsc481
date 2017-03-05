@@ -1,0 +1,5 @@
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\bin\Debug\cpsc481.exe.config
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\cpsc481.csprojResolveAssemblyReference.cache
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\App.g.cs
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\cpsc481_MarkupCompile.cache
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\bin\Debug\uOrder.exe.config

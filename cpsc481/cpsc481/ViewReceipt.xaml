@@ -1,0 +1,91 @@
+﻿<Window x:Class="View_Receipt.ViewReceipt"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View_Receipt"
+        mc:Ignorable="d"
+        Title="PaymentPopup" Height="650" Width="925">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="275*"/>
+            <ColumnDefinition Width="554*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="menu" Content="Menu" Grid.Column="3" HorizontalAlignment="Left" Margin="38,17,0,0" VerticalAlignment="Top" Width="75" BorderThickness ="3" BorderBrush="White" Background="White" Click="menu_Click" FontSize="20"/>
+        <Button x:Name="receipt" Content="View Receipt" Grid.Column="3" HorizontalAlignment="Left" Margin="259,17,0,0" VerticalAlignment="Top" Width="137" BorderThickness="3" BorderBrush="White" Background="White" Click="receipt_Click" FontSize="20"/>
+        <Button x:Name="help" Content="Help" BorderBrush="White" Grid.Column="3" HorizontalAlignment="Left" Margin="155,17,0,0" VerticalAlignment="Top" Width="75" BorderThickness ="3"  Background="White" Click="help_Click" FontSize="20"/>
+        <Button x:Name="call" Content="Call Waiter" Grid.Column="3" HorizontalAlignment="Left" Margin="428,17,0,0" VerticalAlignment="Top" Width="113" BorderThickness="3" BorderBrush="White" Background="White" Click="call_Click" FontSize="20"/>
+        <Grid Name="grid2" Margin="0,54,0,0" Grid.ColumnSpan="4" RenderTransformOrigin="0.486,0.558">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="250"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="313"/>
+                <ColumnDefinition Width="202"/>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="302*"/>
+            </Grid.ColumnDefinitions>
+            <TabControl Grid.Row="0" Grid.Column="3" Height="391" Margin="0,0,29,-174" VerticalAlignment="Bottom" BorderThickness="1.5" BorderBrush="#FF535050">
+                <TabItem Header="Order 1" FontSize="18" Margin="0,0,-15,-1" BorderBrush="#FF5F5C5C">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Width="155">
+                        <StackPanel Width="150">
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </TabItem>
+
+                <TabItem Width="80" BorderBrush="#FF5F5C5C" Header="Order 2" FontSize="18" Margin="11,0,-11,0" Height="34" VerticalAlignment="Top">
+                    <TabItem.Background>
+                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                            <GradientStop Color="#FFDDDDDD" Offset="1"/>
+                        </LinearGradientBrush>
+                    </TabItem.Background>
+                </TabItem>
+                <TabItem Width="35" BorderBrush="#FF5F5C5C" Header="+" FontSize="18" Margin="6,0,-6,0"/>
+            </TabControl>
+            <Button x:Name="button" Content="Place Order Now" Grid.Column="3" HorizontalAlignment="Left" Height="43" Margin="112,446,0,-238" BorderThickness="3.5" VerticalAlignment="Top" FontSize ="23" Width="230" BorderBrush="SandyBrown"/>
+            <ScrollViewer Grid.Column="1" Margin="181,101,0,-174" Width="Auto" ></ScrollViewer>
+            <Button x:Name="helppage" Content="Your Receipt" FontSize="26" HorizontalAlignment="Left" Margin="0,34,0,0" VerticalAlignment="Top" Width="194" Height="62" BorderBrush="White" Background="{x:Null}" FontWeight="Bold"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,182,0,0" TextWrapping="Wrap" Text="Tuna Poke in a Jar" VerticalAlignment="Top" Height="34" Width="184" FontSize="18"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,101,0,0" TextWrapping="Wrap" Text="Earl Grey Tea" VerticalAlignment="Top" Height="28" Width="163" FontSize="18"/>
+            <TextBlock x:Name="textBlock2" Grid.Column="1" HorizontalAlignment="Left" Margin="101,101,0,0" TextWrapping="Wrap" Text="$1.50" VerticalAlignment="Top" Width="59" FontSize="18" Height="36"/>
+            <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="29" Margin="71,130,0,0" TextWrapping="Wrap" BorderThickness="2.5" Text="   Refill" VerticalAlignment="Top" Width="82" Background="#FFDDDDDD" BorderBrush="White" FontSize="18" RenderTransformOrigin="0.585,1.69"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="25" Foreground="#FFB92C2C" Margin="32,134,0,0" TextWrapping="Wrap" Text="'Very hot water'" VerticalAlignment="Top" Width="141" FontSize="18" FontStyle="Italic" BorderBrush="White"/>
+            <TextBlock x:Name="textBlock3" Grid.Column="1" HorizontalAlignment="Left" Margin="101,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,238,0,-19" TextWrapping="Wrap" Text="Ginger Teryaki Rice Bowl" VerticalAlignment="Top" FontSize="18" Height="32" Width="208"/>
+            <TextBlock x:Name="textBlock5" Grid.Column="1" HorizontalAlignment="Left" Margin="91,238,0,-19" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18" Height="32"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="32,275,0,-49" TextWrapping="Wrap" Text="'Allergy to tomatoes'" VerticalAlignment="Top" Width="186" Foreground="#FFB92C2C" FontSize="18" FontStyle="Italic" BorderBrush="White"/>
+            <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="43" Margin="13,426,0,-218" TextWrapping="Wrap" Text="Subtotal = $25.75" VerticalAlignment="Top" Width="162" FontSize="18" Grid.Column="1" BorderBrush="White"/>
+            <TextBox x:Name="textBox4" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="55,456,0,-228" TextWrapping="Wrap" Text="GST = $1.29" VerticalAlignment="Top" Width="120" BorderBrush="White" FontSize="18"/>
+            <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="34" Margin="10,484,0,-267" TextWrapping="Wrap" BorderThickness ="1.5" Text=" Total = $27.04" VerticalAlignment="Top" Width="150" FontSize="20" Background="#FFDDDDDD" BorderBrush="White" Grid.Column="1"/>
+
+        </Grid>
+        <Image x:Name="Image1_png" Margin="2,10,50,549" Source="Image1.png" Stretch="Fill" Grid.Column="2"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Visibility="Visible"  Background="#FFCFCFCF" Opacity="0.8" Height="619" VerticalAlignment="Top" Width="917" Grid.ColumnSpan="3">
+            <StackPanel Background="Black" Opacity="0.8" Margin="280,198,281,198" >
+                <Button Name="button1" Height="33" Content="How would you like to pay?" Margin="10,20" Background="Black" Opacity="0.6" FontSize="22" FontWeight="Bold" Foreground="White" BorderBrush="#FF020202"/>
+                <Button x:Name="button11" Content="Debit/Credit" Margin="51,0" FontWeight="Bold" FontSize="22"/>
+                <Button x:Name="button2" Content="Cash" Margin="51,0" FontWeight="Bold" FontSize="22"/>
+                <Button x:Name="button3" Content="Cancel" Margin="51,0" FontWeight="Bold" FontSize="22"/>
+
+            </StackPanel>
+
+
+
+
+        </Border>
+
+
+
+    </Grid>
+</Window>

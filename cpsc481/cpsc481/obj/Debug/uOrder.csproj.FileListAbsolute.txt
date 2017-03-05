@@ -1,0 +1,17 @@
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\bin\Debug\uOrder.exe.config
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\bin\Debug\uOrder.exe
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\bin\Debug\uOrder.pdb
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\HelpPage.g.cs
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\MainWindow.g.cs
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\ViewReceipt.g.cs
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\App.g.cs
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder_MarkupCompile.cache
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder_MarkupCompile.lref
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\HelpPage.baml
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\MainWindow.baml
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\ViewReceipt.baml
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.g.resources
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.Properties.Resources.resources
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.csproj.GenerateResource.Cache
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.exe
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.pdb

@@ -15,3 +15,4 @@ c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\u
 c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.csproj.GenerateResource.Cache
 c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.exe
 c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.pdb
+c:\users\madel\documents\visual studio 2015\Projects\cpsc481\cpsc481\obj\Debug\uOrder.csprojResolveAssemblyReference.cache

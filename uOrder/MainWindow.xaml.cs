@@ -20,9 +20,44 @@ namespace uOrder
     /// </summary>
     public partial class MainWindow : Window
     {
+        MenuPage _menu = new MenuPage();
+        ReceiptPage _receipt = new ReceiptPage();
+        HelpPage _help = new HelpPage();
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void menu_Click(object sender, RoutedEventArgs e)
+        {
+            menu.BorderBrush = Brushes.DarkRed;
+            help.BorderBrush = Brushes.White;
+            receipt.BorderBrush = Brushes.White;
+            call.BorderBrush = Brushes.White;
+            page_viewer.Children.Clear();
+            page_viewer.Children.Add(_menu);
+        }
+
+        private void help_Click(object sender, RoutedEventArgs e)
+        {
+            menu.BorderBrush = Brushes.White;
+            help.BorderBrush = Brushes.DarkRed;
+            receipt.BorderBrush = Brushes.White;
+            call.BorderBrush = Brushes.White;
+            page_viewer.Children.Clear();
+            page_viewer.Children.Add(_help);
+
+        }
+
+        private void receipt_Click(object sender, RoutedEventArgs e)
+        {
+            menu.BorderBrush = Brushes.White;
+            help.BorderBrush = Brushes.White;
+            receipt.BorderBrush = Brushes.DarkRed;
+            call.BorderBrush = Brushes.White;
+            page_viewer.Children.Clear();
+            page_viewer.Children.Add(_receipt);
+        }
     }
 }
+

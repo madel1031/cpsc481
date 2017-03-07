@@ -16,3 +16,5 @@
 \\samba.cs.ucalgary.ca\rarmclea\documents\visual studio 2015\Projects\uOrder\uOrder\obj\Debug\MenuPage.g.cs
 \\samba.cs.ucalgary.ca\rarmclea\documents\visual studio 2015\Projects\uOrder\uOrder\obj\Debug\HelpPage.baml
 \\samba.cs.ucalgary.ca\rarmclea\documents\visual studio 2015\Projects\uOrder\uOrder\obj\Debug\MenuPage.baml
+\\samba.cs.ucalgary.ca\rarmclea\documents\visual studio 2015\Projects\uOrder\uOrder\obj\Debug\ReceiptPage.g.cs
+\\samba.cs.ucalgary.ca\rarmclea\documents\visual studio 2015\Projects\uOrder\uOrder\obj\Debug\ReceiptPage.baml

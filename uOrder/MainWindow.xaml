@@ -13,52 +13,19 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Image x:Name="Image1_png" Grid.Row="0" Margin="25,0,1450,0" Source="Image1.png" Stretch="Uniform"/>
-        <Button Name="menu" Grid.Row="0" Content="MENU" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="628,0,1079,0"/>
-        <Button Name="help" Grid.Row="0" Content="HELP" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="925,0,782,0"/>
-        <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1252,0,455,0"/>
-        <Button Name="call" Grid.Row="0" Content="CALL WAITER" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1651,0,56,0"/>
+        <Button Name="menu" Grid.Row="0" Content="MENU" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="778,20,999,20"  Click="menu_Click"/>
+        <Button Name="help" Grid.Row="0" Content="HELP" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1060,20,754,20" Click="help_Click"/>
+        <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1329,20,350,20" Click="receipt_Click"/>
+        <Button Name="call" Grid.Row="0" Content="CALL WAITER" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1683,20,25,20"/>
         <Image x:Name="Image5_png" Grid.Row="2" Margin="25,10,1450,27" Source="Image5.png" Stretch="Uniform"/>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1000"/>
                 <ColumnDefinition Width="900"/>
             </Grid.ColumnDefinitions>
-            <TabControl Grid.Column="0" TabStripPlacement="Right" Margin="36,36,36,10">
-                <TabItem Header="SHARE" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="PIZZAS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="SOUPS + SALADS" FontFamily="Montreal" FontSize="16" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="STEAKS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="MAINS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="PASTA + RICE" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="BURGERS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="HANDHELDS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="DRINKS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="DESSERTS" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-                <TabItem Header="KIDS MENU" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                    <ScrollViewer Height="720" Width="760"/>
-                </TabItem>
-            </TabControl>
-
+            <StackPanel Grid.Row="0" Name="page_viewer" Margin="10">
+                
+            </StackPanel>
             <TabControl Grid.Column="1" TabStripPlacement="Top" Margin="36,36,36,140">
                 <TabItem Header="ORDER ONE" FontFamily="Montreal" FontSize="18" Width="140" Height="45">
                     <ScrollViewer Height="0" Width="760"/>

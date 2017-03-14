@@ -58,6 +58,23 @@ namespace uOrder
             page_viewer.Children.Clear();
             page_viewer.Children.Add(_receipt);
         }
+
+        private void call_Click(object sender, RoutedEventArgs e)
+        {
+            menu.BorderBrush = Brushes.White;
+            help.BorderBrush = Brushes.White;
+            receipt.BorderBrush = Brushes.White;
+            call.BorderBrush = Brushes.DarkRed;
+            if (MessageBox.Show("Do you want to call the waiter?", "Call Waiter", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                MessageBox.Show("The waiter has been called. Please wait.", "Call Waiter");
+
+        }
+
+        private void pay_Click(object sender, RoutedEventArgs e)
+        {
+            if (MessageBox.Show("Are you ready to place your order?", "Place Order", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                MessageBox.Show("Your order has been sent to the kitchen. You can view ordered items under 'View Receipt' or order more items under 'Menu'", "Place Order");
+        }
     }
 }
 

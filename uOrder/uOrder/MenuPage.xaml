@@ -9,7 +9,7 @@
     <Grid>
         <TabControl Grid.Column="0" TabStripPlacement="Right" Margin="36,36,36,10">
             <TabItem Header="SHARE" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
-                <ScrollViewer Height="720" Width="760">
+                <ScrollViewer Height="720" Width="760" VerticalScrollBarVisibility="Hidden">
                     <StackPanel Width="740">
                         <Button Background="White" BorderThickness="0">
                             <TextBlock Width="735">

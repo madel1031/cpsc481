@@ -18,7 +18,7 @@
         <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1329,20,350,20" Click="receipt_Click"/>
         <Button Name="call" Grid.Row="0" Content="CALL WAITER" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1683,20,25,20" Click="call_Click"/>
         <Image x:Name="Image5_png" Grid.Row="2" Margin="25,10,1450,27" Source="Image5.png" Stretch="Uniform"/>
-        <Grid Grid.Row="1" Background="DarkRed">
+        <Grid Grid.Row="1" Background="GhostWhite">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1000"/>
                 <ColumnDefinition Width="900"/>

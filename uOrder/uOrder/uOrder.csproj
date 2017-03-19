@@ -55,12 +55,93 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Bruschetta.xaml.cs">
+      <DependentUpon>Bruschetta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Calamari.xaml.cs">
+      <DependentUpon>Calamari.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChickenWings.xaml.cs">
+      <DependentUpon>ChickenWings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleCheeseNachosForOneOrTwo.xaml.cs">
+      <DependentUpon>DoubleCheeseNachosForOneOrTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DoubleCheeseNachosSharePlatter.xaml.cs">
+      <DependentUpon>DoubleCheeseNachosSharePlatter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DryRibs.xaml.cs">
+      <DependentUpon>DryRibs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IndoChickenFlatbread.xaml.cs">
+      <DependentUpon>IndoChickenFlatbread.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KoreanFriedCauliflower.xaml.cs">
+      <DependentUpon>KoreanFriedCauliflower.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LettuceWraps.xaml.cs">
+      <DependentUpon>LettuceWraps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Med-Bread.xaml.cs">
+      <DependentUpon>Med-Bread.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MosaicDip.xaml.cs">
+      <DependentUpon>MosaicDip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Potstickers.xaml.cs">
+      <DependentUpon>Potstickers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ReceiptPage.xaml.cs">
       <DependentUpon>ReceiptPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SushiCones.xaml.cs">
+      <DependentUpon>SushiCones.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SweetChiliChicken.xaml.cs">
+      <DependentUpon>SweetChiliChicken.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TunaPokeInAJar.xaml.cs">
+      <DependentUpon>TunaPokeInAJar.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Bruschetta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Calamari.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ChickenWings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DoubleCheeseNachosForOneOrTwo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DoubleCheeseNachosSharePlatter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DryRibs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="HelpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IndoChickenFlatbread.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KoreanFriedCauliflower.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LettuceWraps.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -77,13 +158,37 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Med-Bread.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MenuPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MosaicDip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Potstickers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ReceiptPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SushiCones.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SweetChiliChicken.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TunaPokeInAJar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

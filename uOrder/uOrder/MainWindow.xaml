@@ -12,32 +12,19 @@
             <RowDefinition Height="800"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" Fill="#FF4F0D0D"/>
         <Image x:Name="Image1_png" Grid.Row="0" Margin="25,0,1450,0" Source="Image1.png" Stretch="Uniform"/>
-        <Button Name="menu" Grid.Row="0" Content="MENU" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="778,20,999,20"  Click="menu_Click"/>
-        <Button Name="help" Grid.Row="0" Content="HELP" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1060,20,754,20" Click="help_Click"/>
-        <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1329,20,350,20" Click="receipt_Click"/>
-        <Button Name="call" Grid.Row="0" Content="CALL WAITER" FontSize="28" FontWeight="Heavy" Background="White" BorderBrush="White" BorderThickness="3" Margin="1683,20,25,20" Click="call_Click"/>
+        <Button Name="menu" Grid.Row="0" Content="MENU" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="778,20,999,20"  Click="menu_Click"/>
+        <Button Name="help" Grid.Row="0" Content="HELP" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="1060,20,754,20" Click="help_Click"/>
+        <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="1329,20,350,20" Click="receipt_Click"/>
+        <Button Name="call" Grid.Row="0" Content="CALL WAITER" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="1683,20,25,20" Click="call_Click"/>
         <Image x:Name="Image5_png" Grid.Row="2" Margin="25,10,1450,27" Source="Image5.png" Stretch="Uniform"/>
-        <Grid Grid.Row="1" Background="GhostWhite">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="1000"/>
-                <ColumnDefinition Width="900"/>
-            </Grid.ColumnDefinitions>
-            <StackPanel Grid.Row="0" Name="page_viewer" Margin="10">
-
-            </StackPanel>
-            <StackPanel Grid.Column="1">
-                <Label FontSize="24" Content="YOUR ORDER" FontWeight="Bold" Margin="8,0,728,0" />
-                <ScrollViewer Height="560"  Width="881" VerticalScrollBarVisibility="Hidden">
-                    <StackPanel >
-
-                    </StackPanel>
-                </ScrollViewer>
-                <Label Content="Subtotal: $0.00" FontSize="14" Margin="781,15,15,0" HorizontalContentAlignment="Right"/>
-                <Label Content="GST: $0.00" FontSize="14" Margin="806,0,15,0" HorizontalContentAlignment="Right"/>
-                <Label Content="Total: $0.00" FontSize="20" Margin="775,0,15,0" HorizontalContentAlignment="Right"/>
-                <Button Name="order" Content="Place Order" Height="40" Margin="715,0,15,0" FontSize="22" VerticalContentAlignment="Center" Click="pay_Click"/>
-            </StackPanel>
-        </Grid>
+        <Rectangle Grid.Row="1" Fill="#FFC7C2C2"/>
+        <StackPanel Grid.Row="1" Name="page_viewer" Margin="10">
+        </StackPanel>
+        <Button Name="start" Grid.RowSpan="3" Background="White" Click="start_Click">
+            <Image x:Name="Image1_png3" Grid.Row="0" Margin="0,0,0,0" Source="Image1.png" Stretch="Uniform"/>
+        </Button>
     </Grid>
 </Window>

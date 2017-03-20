@@ -12,7 +12,7 @@
                 <Button Content="Go Back" Width="875"/>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="Lettuce Wraps" FontSize="14" FontWeight="Bold"/>
-                    <Image x:Name="icon-veg"  Source="image4.png" Height="14" Width="35"/>
+                    <Image x:Name="icon_veg"  Source="image4.png" Height="14" Width="35"/>
                 </StackPanel>
                 <Label Content="fresh veggies, cashews, chow mein noodles, ginger soy glaze - 13 ¾" FontSize="10" Margin="0, -10, 0 , 0"/>
                 <CheckBox Content="add chicken 5" />

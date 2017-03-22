@@ -94,3 +94,6 @@ C:\Users\rachel\Desktop\cpsc481-master\uOrder\uOrder\obj\Debug\uOrder.csproj.Gen
 U:\Desktop\cpsc481\uOrder\uOrder\bin\Debug\uOrder.exe.config
 U:\Desktop\cpsc481\uOrder\uOrder\obj\Debug\uOrder.exe
 U:\Desktop\cpsc481\uOrder\uOrder\obj\Debug\uOrder.pdb
+C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2New\New\cpsc481\uOrder\uOrder\bin\Debug\uOrder.exe.config
+C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2New\New\cpsc481\uOrder\uOrder\obj\Debug\uOrder.exe
+C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2New\New\cpsc481\uOrder\uOrder\obj\Debug\uOrder.pdb

@@ -65,6 +65,9 @@
     <Compile Include="ChickenWings.xaml.cs">
       <DependentUpon>ChickenWings.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DetailedOrderPage.xaml.cs">
+      <DependentUpon>DetailedOrderPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DoubleCheeseNachosForOneOrTwo.xaml.cs">
       <DependentUpon>DoubleCheeseNachosForOneOrTwo.xaml</DependentUpon>
     </Compile>
@@ -115,6 +118,10 @@
     <Page Include="ChickenWings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DetailedOrderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DoubleCheeseNachosForOneOrTwo.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -236,6 +243,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

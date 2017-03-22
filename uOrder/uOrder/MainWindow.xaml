@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:uOrder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1020" Width="1950" >
+        Title="uOrder - Restaurant Ordering System" Height="1020" Width="1950" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" >
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
-            <RowDefinition Height="800"/>
+            <RowDefinition Height="850"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Rectangle Grid.Row="0" Fill="#FF4F0D0D"/>
-        <Image x:Name="Image1_png" Grid.Row="0" Margin="25,0,1450,0" Source="Image1.png" Stretch="Uniform"/>
+        <Image x:Name="Image6_png3" Grid.Row="0" Margin="25,0,1581,0" Source="Image6.png" Stretch="Uniform"/>
         <Button Name="menu" Grid.Row="0" Content="MENU" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="778,20,999,20"  Click="menu_Click"/>
         <Button Name="help" Grid.Row="0" Content="HELP" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="1060,20,754,20" Click="help_Click"/>
         <Button Name="receipt" Grid.Row="0" Content="VIEW RECEIPT" FontSize="28" FontWeight="Heavy" Foreground="#FFEEE6E4" Background="#FF4F0D0D" BorderBrush="#FF4F0D0D" BorderThickness="3" Margin="1329,20,350,20" Click="receipt_Click"/>
@@ -23,8 +23,8 @@
         <Rectangle Grid.Row="1" Fill="#FFC7C2C2"/>
         <StackPanel Grid.Row="1" Name="page_viewer" Margin="10">
         </StackPanel>
-        <Button Name="start" Grid.RowSpan="3" Background="White" Click="start_Click">
-            <Image x:Name="Image1_png3" Grid.Row="0" Margin="0,0,0,0" Source="Image1.png" Stretch="Uniform"/>
+        <Button Name="start" Grid.RowSpan="3" Background="#FF4F0D0D" Click="start_Click">
+            <Image x:Name="Image6_png" Source="Image6.png" Stretch="Fill" />
         </Button>
     </Grid>
 </Window>

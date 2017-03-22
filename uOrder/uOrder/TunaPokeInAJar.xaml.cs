@@ -20,9 +20,33 @@ namespace uOrder
     /// </summary>
     public partial class TunaPokeInAJar : UserControl
     {
-        public TunaPokeInAJar()
+        MenuPage _menu;
+        float price = 9.75F;
+        public TunaPokeInAJar(MenuPage _menu)
         {
+            this._menu = _menu;
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AutoClosingMessageBox.Show("Added to order.", "Item Added", 600);
+            TextBlock text = new TextBlock();
+            text.Text = "$" + price;
+            TextBlock note = new TextBlock();
+            note.Text = allergies.Text;
+            TextBlock item = new TextBlock();
+            item.Text = title.ContentStringFormat;
+            _menu.order_stack.Children.Add(item);
+            _menu.order_stack.Children.Add(note);
+            _menu.order_stack.Children.Add(text);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //_menu.menu.Visibility = Visibility.Hidden;
+            _menu.menu.Visibility = Visibility.Visible;
+
         }
     }
 }

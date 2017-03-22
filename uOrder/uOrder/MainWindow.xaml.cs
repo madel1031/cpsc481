@@ -25,6 +25,7 @@ namespace uOrder
         HelpPage _help = new HelpPage();
         SolidColorBrush darkRed = new SolidColorBrush(Color.FromRgb(79, 13, 13));
         SolidColorBrush white = new SolidColorBrush(Color.FromRgb(238, 230, 228));
+        int calls = 0;
 
         public MainWindow()
         {
@@ -72,7 +73,16 @@ namespace uOrder
             receipt.BorderBrush = darkRed;
             call.BorderBrush = white;
             if (MessageBox.Show("Do you want to call the waiter?", "Call Waiter", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                AutoClosingMessageBox.Show("The waiter has been called. Please wait.", "Waiter Called", 2000);
+            {
+                if (calls == 0)
+                {
+                    calls++;
+                    AutoClosingMessageBox.Show("The waiter has been called. Please wait.", "Waiter Called", 1200);
+                }
+                else
+                    AutoClosingMessageBox.Show("The waiter has been called again. Please wait.", "Waiter Called <" + ++calls + ">", 1200);
+            }
+
             menu.BorderBrush = menu_brush;
             help.BorderBrush = help_brush;
             receipt.BorderBrush = receipt_brush;

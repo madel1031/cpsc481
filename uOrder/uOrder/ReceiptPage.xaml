@@ -11,7 +11,7 @@
 
             <Label FontSize="24" Content="RECEIPT" FontWeight="Bold" Margin="8,0,834,0" />
             <ScrollViewer Height="560" VerticalScrollBarVisibility="Hidden" Background="White" Margin="10,0,15,0">
-                <StackPanel>
+                <StackPanel Name="receipt_stack">
 
                 </StackPanel>
             </ScrollViewer>

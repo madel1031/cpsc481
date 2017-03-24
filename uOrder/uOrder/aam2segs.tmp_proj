@@ -35,26 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
     <Compile Include="AutoClosingMessageBox.cs" />
     <Compile Include="Bruschetta.xaml.cs">
       <DependentUpon>Bruschetta.xaml</DependentUpon>
@@ -111,54 +93,6 @@
     <Compile Include="YourOrder.xaml.cs">
       <DependentUpon>YourOrder.xaml</DependentUpon>
     </Compile>
-    <Page Include="Bruschetta.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Calamari.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ChickenWings.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DetailedOrderPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="DoubleCheeseNachosForOneOrTwo.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DoubleCheeseNachosSharePlatter.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="DryRibs.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="HelpPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="IndoChickenFlatbread.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="KoreanFriedCauliflower.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="LettuceWraps.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -170,42 +104,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Med-Bread.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="MenuPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MosaicDip.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Potstickers.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="ReceiptPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SushiCones.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SweetChiliChicken.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="TunaPokeInAJar.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="YourOrder.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MenuPage.xaml.cs">
@@ -238,31 +136,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image3.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image4.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image6.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image7.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image8.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ipad_keyboard_caps_lock_.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -272,4 +159,43 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Microsoft.CSharp.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationCore.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\PresentationFramework.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Core.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.DataSetExtensions.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Net.Http.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xaml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.Linq.dll" />
+    <ReferencePath Include="C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\WindowsBase.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\Bruschetta.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\Calamari.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\ChickenWings.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\DetailedOrderPage.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\DoubleCheeseNachosForOneOrTwo.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\DoubleCheeseNachosSharePlatter.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\DryRibs.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\HelpPage.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\IndoChickenFlatbread.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\KoreanFriedCauliflower.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\LettuceWraps.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\MainWindow.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\Med-Bread.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\MenuPage.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\MosaicDip.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\Potstickers.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\ReceiptPage.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\SushiCones.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\SweetChiliChicken.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\TunaPokeInAJar.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\YourOrder.g.cs" />
+    <Compile Include="C:\Users\Shivani Thakkar\Desktop\U of C Winter 2017\CPSC 481\A2\Vertical Prototype\cpsc481\uOrder\uOrder\obj\Debug\App.g.cs" />
+  </ItemGroup>
 </Project>

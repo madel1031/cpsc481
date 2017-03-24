@@ -27,6 +27,9 @@ namespace uOrder
         {
             InitializeComponent();
         }
+
+       
+
         private void order_Click(object sender, RoutedEventArgs e)
         {
             if (MessageBox.Show("Are you ready to place your order?", "Place Order", MessageBoxButton.YesNo) == MessageBoxResult.Yes)

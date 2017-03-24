@@ -92,8 +92,10 @@ namespace uOrder
 
         private void start_Click(object sender, RoutedEventArgs e)
         {
+
             start.Visibility = Visibility.Hidden;
             menu.BorderBrush = white;
+            page_viewer.Children.Clear();
             page_viewer.Children.Add(_menu);
         }
     }

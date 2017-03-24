@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,6 +68,13 @@ namespace uOrder
         {
             _menu.menu.Visibility = Visibility.Visible;
             _menu.page_viewer.Children.Remove(this);
+        }
+
+        private void notes_GotFocus(object sender, RoutedEventArgs e)
+        {
+            notes.Clear();
+            //keyboard image... 
+         
         }
     }
 }

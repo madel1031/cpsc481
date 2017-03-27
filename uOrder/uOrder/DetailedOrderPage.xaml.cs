@@ -24,22 +24,27 @@ namespace uOrder
         double price;
         string item;
         MenuPage _menu;
+
         public DetailedOrderPage(MenuPage menu, String itemTitle, String itemDetails, double price, bool veg, bool wise)
         {
             InitializeComponent();
-            this.details.Text = itemDetails;
-            this.title.Content = itemTitle;
             this._menu = menu;
-            this.price = price;
             this.item = itemTitle;
+            this.title.Content = itemTitle;
+            this.details.Text = itemDetails;
+            this.price = price;
+
             if (veg)
                 iconveg.Visibility = Visibility.Visible;
             if (wise)
                 iconoceanwise.Visibility = Visibility.Visible;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //When add to order is pressed
+        //Brings item over to item stack 
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
+
             TextBlock one = new TextBlock();
             one.Text = item;
             one.FontSize = 22;
@@ -62,14 +67,18 @@ namespace uOrder
             _menu.tot_label.Content = "Total: $" + _menu.total;
             AutoClosingMessageBox.Show("Added item to order", "Item Added", 500);
 
+
         }
 
+        //Go back 
+        //Brings back main menu, gets rid of detailed ordered page for item 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             _menu.menu.Visibility = Visibility.Visible;
             _menu.page_viewer.Children.Remove(this);
         }
 
+        //Clears text in textbox when writing into it 
         private void notes_GotFocus(object sender, RoutedEventArgs e)
         {
             notes.Clear();

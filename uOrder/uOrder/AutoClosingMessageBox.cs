@@ -21,6 +21,7 @@ namespace uOrder
         public static void Show(string title, string message, int timeout)
         {
             new AutoClosingMessageBox(title, message, timeout);
+
         }
         public void OnTimerElapsed(Object state)
         {

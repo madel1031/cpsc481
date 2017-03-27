@@ -18,22 +18,45 @@ namespace uOrder
     /// <summary>
     /// Interaction logic for MenuPage.xaml
     /// </summary>
+    /// 
     public partial class MenuPage : UserControl
     {
         public double subtotal = 0.0;
         public double gst = 0.0;
         public double total = 0.0;
+
+        ReceiptPage _receipt;
+        //DetailedOrderPage _detail;
+
         public MenuPage()
         {
             InitializeComponent();
+        }  
+
+        public MenuPage(ReceiptPage receipt, DetailedOrderPage detail)
+        {
+            InitializeComponent();
+            this._receipt = receipt;
+            //this._detail = detail;
         }
 
-       
+        
 
-        private void order_Click(object sender, RoutedEventArgs e)
+        //PLACE ORDER 
+        public void order_Click(object sender, RoutedEventArgs e)
         {
+            Button add = (Button)sender;
+            //DetailedOrderPage.Button_Click();
+
+
             if (MessageBox.Show("Are you ready to place your order?", "Place Order", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+            {
+                
+
                 AutoClosingMessageBox.Show("Your order has been sent to the kitchen. You can view ordered items under 'View Receipt' or order more items under 'Menu'", "Place Order", 2500);
+           
+            }
+
         }
         private void tpiaj_Click(object sender, RoutedEventArgs e)
         {
@@ -73,10 +96,24 @@ namespace uOrder
         }
         private void sc_Click(object sender, RoutedEventArgs e)
         {
-            menu.Visibility = Visibility.Collapsed;
-            page_viewer.Children.Add(new DetailedOrderPage(this, "Sushi Cones", "tempura prawns, fresh avocado, nori + ponzu - 14 ¼", 14.25, false, false));
-
+            /**
+            //menu.Visibility = Visibility.Collapsed;
+            //page_viewer.Children.Add(new DetailedOrderPage(this, "Sushi Cones", "tempura prawns, fresh avocado, nori + ponzu - 14 ¼", 14.25, false, false));
+            Label unavailable = new Label();
+            unavailable.Content = "We're sorry, this item is currently unavailable.";
+            unavailable.FontSize = 20;
+            //textbox.Background = Brushes.White;
+            //unavailable.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            unavailable.FontFamily = new FontFamily("DengXian");
+            unavailable.HorizontalContentAlignment = HorizontalAlignment.Center;
+            unavailable.VerticalContentAlignment = VerticalAlignment.Center;
+            unavailable.Height = 80;
+            unavailable.Width = 735;
+            no.Children.Clear();
+            no.Children.Add(unavailable);
+            */
         }
+
         private void icf_Click(object sender, RoutedEventArgs e)
         {
             menu.Visibility = Visibility.Collapsed;
@@ -112,5 +149,6 @@ namespace uOrder
             menu.Visibility = Visibility.Collapsed;
             page_viewer.Children.Add(new DetailedOrderPage(this, "Double Cheese Nachos for One or Two", "13 ¾ \n add beef - 5 \n add pulled chicken - 5", 13.75, false, false));
         }
+
     }
 }

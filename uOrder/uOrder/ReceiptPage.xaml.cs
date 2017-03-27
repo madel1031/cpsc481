@@ -20,15 +20,23 @@ namespace uOrder
     /// </summary>
     public partial class ReceiptPage : UserControl
     {
+        MenuPage _menu;
+
         public ReceiptPage()
         {
             InitializeComponent();
+            //_menu = menu;
         }
 
+        //IGNORE FOR NOW
         private void pay_Click(object sender, RoutedEventArgs e)
         {
+
             if (MessageBox.Show("Are you ready to pay for your order?", "Pay Now", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
-                AutoClosingMessageBox.Show("The waiter is on the way with the cheque", "Pay Now",2000);
+            {
+                AutoClosingMessageBox.Show("The waiter is on the way with the cheque", "Pay Now", 2000);
+            }
+
         }
     }
 }

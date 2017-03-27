@@ -20,7 +20,7 @@
                 <TextBox GotFocus ="notes_GotFocus" Name="notes" Width="874" Height="181" FontFamily="Courier New" FontSize="20">
                     Enter preferences or allergies here
                 </TextBox>
-                <Button Content="Add to Order" Margin="650,10,0,0" Background="DarkRed" Foreground="White" FontSize="22" Click="Button_Click" />
+                <Button Name ="add" Content="Add to Order" Margin="650,10,0,0" Background="DarkRed" Foreground="White" FontSize="22" Click="Button_Click" Uid="n"  />
             </StackPanel>
         </ScrollViewer>
     </Grid>

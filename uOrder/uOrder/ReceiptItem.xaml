@@ -10,7 +10,7 @@
         <Label Name="item_title" FontSize="22" Margin="10,0,676.2,53.6"/>
         <TextBlock Name="item_details" FontSize="18" FontStyle="Italic" HorizontalAlignment="Left" Margin="10,36,589.2,9.6" Width="276"/>
         <Label Name="item_price" FontSize="18" Margin="1600,41,10,10"/>
-        <Button Background="DarkRed" Foreground="White" Content="Refill" Click="Button_Click" Margin="188,-3,581.2,53.6" Visibility="Collapsed" />
+        <Button Name="refill" Background="DarkRed" Foreground="White" Content="Refill" Click="Button_Click" Margin="188,-3,581.2,53.6" Visibility="Collapsed" />
 
     </Grid>
 </UserControl>

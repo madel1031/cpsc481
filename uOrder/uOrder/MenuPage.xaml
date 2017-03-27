@@ -13,8 +13,8 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="1">
-            <Label FontSize="24" Content="YOUR ORDER" FontWeight="Bold" Margin="8,0,728,0" />
-            <ScrollViewer Height="560"  Width="881" VerticalScrollBarVisibility="Hidden" Background="#FFEEE6E4">
+            <Label FontSize="40" Content="YOUR ORDER" FontWeight="Bold" Margin="8,0,728,0" />
+            <ScrollViewer Height="560" VerticalScrollBarVisibility="Hidden" Background="#FFF6F1F0" Margin="8">
                 <StackPanel Margin="10,0" Name="order_stack">
 
                 </StackPanel>
@@ -25,8 +25,8 @@
             <Button Name="order" Content="Place Order" Height="40" Margin="15,0,15,0" FontSize="22" Foreground="White" VerticalContentAlignment="Center" Click="order_Click" Background="DarkRed"/>
         </StackPanel>
         <StackPanel Name="page_viewer" Grid.Column="0">
-            <Label FontSize="24" Content="MENU" FontWeight="Bold" Margin="8,10,0,0" />
-            <TabControl Name="menu" TabStripPlacement="Right" Margin="36,16,36,10">
+            <Label FontSize="40" Content="MENU" FontWeight="Bold" Margin="8,0,0,0" />
+            <TabControl Name="menu" TabStripPlacement="Right" Margin="10,10,36,10">
                 <TabItem Header="SHARE" FontFamily="Montreal" FontSize="18" Width="140" Height="65">
                     <ScrollViewer Height="720" Width="760" VerticalScrollBarVisibility="Hidden">
                         <StackPanel Width="740">

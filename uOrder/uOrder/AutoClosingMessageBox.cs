@@ -10,17 +10,17 @@ namespace uOrder
     {
         System.Threading.Timer _timer;
         String _message;
-        public AutoClosingMessageBox(string title, string message, int timeout)
+        public AutoClosingMessageBox(string message, string title, int timeout)
         {
             _message = message;
             _timer = new System.Threading.Timer(OnTimerElapsed,
                 null, timeout, System.Threading.Timeout.Infinite);
             using (_timer)
-                System.Windows.MessageBox.Show(title, message);
+                System.Windows.MessageBox.Show(message, title);
         }
-        public static void Show(string title, string message, int timeout)
+        public static void Show(string message, string title, int timeout)
         {
-            new AutoClosingMessageBox(title, message, timeout);
+            new AutoClosingMessageBox(message, title, timeout);
 
         }
         public void OnTimerElapsed(Object state)

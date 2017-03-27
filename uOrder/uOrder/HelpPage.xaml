@@ -17,7 +17,7 @@
             </TextBlock>
         </StackPanel>
         <ScrollViewer VerticalScrollBarVisibility="Hidden" Margin="-15,247,10,51" FontSize="72">
-            <StackPanel Background="White" Height="961" Width="1868">
+            <StackPanel Background="#FFF6F1F0" Height="961" Width="1868">
 
                 <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Exploring our selection" VerticalAlignment="Top" Margin="15,10,0,-20" Height="97" Width="1852" Foreground="#FFA62525" FontFamily="Segoe Script" FontSize="42"/>
 

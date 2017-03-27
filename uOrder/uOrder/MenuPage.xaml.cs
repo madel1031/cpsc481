@@ -39,11 +39,11 @@ namespace uOrder
                 OrderItem[] array = new OrderItem[order_stack.Children.Count];
                 order_stack.Children.CopyTo(array, 0);
                 for (int i = 0; i < array.Length; i++)
-                    _receipt.receipt_stack.Children.Add(new ReceiptItem(array[i].title, array[i].details,array[i].price));
+                    _receipt.receipt_stack.Children.Add(new ReceiptItem(array[i].title, array[i].details,array[i].price, array[i].refillable));
                 order_stack.Children.Clear();
-                _receipt.gst = this.subtotal;
-                _receipt.subtotal = this.gst;
-                _receipt.total = this.total;
+                _receipt.gst += this.subtotal;
+                _receipt.subtotal += this.gst;
+                _receipt.total += this.total;
                 _receipt.sub_label.Content = "Subtotal: $" + _receipt.subtotal.ToString("F");
                 _receipt.gst_label.Content = "GST: $" + _receipt.gst.ToString("F");
                 _receipt.tot_label.Content = "Total: $" + _receipt.total.ToString("F");

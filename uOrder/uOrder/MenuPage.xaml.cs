@@ -18,51 +18,50 @@ namespace uOrder
     /// <summary>
     /// Interaction logic for MenuPage.xaml
     /// </summary>
-    /// 
     public partial class MenuPage : UserControl
     {
         public double subtotal = 0.0;
         public double gst = 0.0;
         public double total = 0.0;
-
         ReceiptPage _receipt;
-        //DetailedOrderPage _detail;
-
-        public MenuPage()
+        public MenuPage(ReceiptPage receipt)
         {
             InitializeComponent();
-        }  
-
-        public MenuPage(ReceiptPage receipt, DetailedOrderPage detail)
-        {
-            InitializeComponent();
-            this._receipt = receipt;
-            //this._detail = detail;
+            _receipt = receipt;
         }
 
-        
 
-        //PLACE ORDER 
-        public void order_Click(object sender, RoutedEventArgs e)
+
+        private void order_Click(object sender, RoutedEventArgs e)
         {
-            Button add = (Button)sender;
-            //DetailedOrderPage.Button_Click();
-
-
             if (MessageBox.Show("Are you ready to place your order?", "Place Order", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-                
-
+                OrderItem[] array = new OrderItem[order_stack.Children.Count];
+                order_stack.Children.CopyTo(array, 0);
+                for (int i = 0; i < array.Length; i++)
+                    _receipt.receipt_stack.Children.Add(new ReceiptItem(array[i].title, array[i].details,array[i].price));
+                order_stack.Children.Clear();
+                _receipt.gst = this.subtotal;
+                _receipt.subtotal = this.gst;
+                _receipt.total = this.total;
+                _receipt.sub_label.Content = "Subtotal: $" + _receipt.subtotal.ToString("F");
+                _receipt.gst_label.Content = "GST: $" + _receipt.gst.ToString("F");
+                _receipt.tot_label.Content = "Total: $" + _receipt.total.ToString("F");
+                gst = 0.0;
+                subtotal = 0.0;
+                total = 0.0;
+                sub_label.Content = "Subtotal: $" + subtotal.ToString("F");
+                gst_label.Content = "GST: $" + gst.ToString("F");
+                tot_label.Content = "Total: $" + total.ToString("F");
                 AutoClosingMessageBox.Show("Your order has been sent to the kitchen. You can view ordered items under 'View Receipt' or order more items under 'Menu'", "Place Order", 2500);
-           
-            }
 
+            }
         }
         private void tpiaj_Click(object sender, RoutedEventArgs e)
         {
             menu.Visibility = Visibility.Collapsed;
             page_viewer.Children.Add(new DetailedOrderPage(this, "Tuna Poke in a Jar", "avocado, fresh tomatoes, nori crisps, ginger, spring onions + ponzu - 9 ¾", 9.75, false, true));
-           
+
         }
         private void kfc_Click(object sender, RoutedEventArgs e)
         {
@@ -92,28 +91,14 @@ namespace uOrder
         private void dr_Click(object sender, RoutedEventArgs e)
         {
             menu.Visibility = Visibility.Collapsed;
-            page_viewer.Children.Add(new DetailedOrderPage(this, "Dry Ribs", "11 ¾", 11.75, false,false));
+            page_viewer.Children.Add(new DetailedOrderPage(this, "Dry Ribs", "11 ¾", 11.75, false, false));
         }
         private void sc_Click(object sender, RoutedEventArgs e)
         {
-            /**
-            //menu.Visibility = Visibility.Collapsed;
-            //page_viewer.Children.Add(new DetailedOrderPage(this, "Sushi Cones", "tempura prawns, fresh avocado, nori + ponzu - 14 ¼", 14.25, false, false));
-            Label unavailable = new Label();
-            unavailable.Content = "We're sorry, this item is currently unavailable.";
-            unavailable.FontSize = 20;
-            //textbox.Background = Brushes.White;
-            //unavailable.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            unavailable.FontFamily = new FontFamily("DengXian");
-            unavailable.HorizontalContentAlignment = HorizontalAlignment.Center;
-            unavailable.VerticalContentAlignment = VerticalAlignment.Center;
-            unavailable.Height = 80;
-            unavailable.Width = 735;
-            no.Children.Clear();
-            no.Children.Add(unavailable);
-            */
-        }
+            menu.Visibility = Visibility.Collapsed;
+            page_viewer.Children.Add(new DetailedOrderPage(this, "Sushi Cones", "tempura prawns, fresh avocado, nori + ponzu - 14 ¼", 14.25, false, false));
 
+        }
         private void icf_Click(object sender, RoutedEventArgs e)
         {
             menu.Visibility = Visibility.Collapsed;
@@ -150,5 +135,9 @@ namespace uOrder
             page_viewer.Children.Add(new DetailedOrderPage(this, "Double Cheese Nachos for One or Two", "13 ¾ \n add beef - 5 \n add pulled chicken - 5", 13.75, false, false));
         }
 
+        private void not_available_Click(object sender, RoutedEventArgs e)
+        {
+            AutoClosingMessageBox.Show("This item is currently unavailable. We apologize for the inconvenience.", "Item Not Available", 1500);
+        }
     }
 }

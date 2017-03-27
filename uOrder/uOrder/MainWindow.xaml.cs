@@ -20,8 +20,8 @@ namespace uOrder
     /// </summary>
     public partial class MainWindow : Window
     {
-        MenuPage _menu = new MenuPage();
         ReceiptPage _receipt = new ReceiptPage();
+        MenuPage _menu;
         HelpPage _help = new HelpPage();
         SolidColorBrush darkRed = new SolidColorBrush(Color.FromRgb(79, 13, 13));
         SolidColorBrush white = new SolidColorBrush(Color.FromRgb(238, 230, 228));
@@ -30,6 +30,7 @@ namespace uOrder
         public MainWindow()
         {
             InitializeComponent();
+            _menu = new MenuPage(_receipt);
         }
 
         private void menu_Click(object sender, RoutedEventArgs e)

@@ -92,8 +92,14 @@
     <Compile Include="MosaicDip.xaml.cs">
       <DependentUpon>MosaicDip.xaml</DependentUpon>
     </Compile>
+    <Compile Include="OrderItem.xaml.cs">
+      <DependentUpon>OrderItem.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Potstickers.xaml.cs">
       <DependentUpon>Potstickers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiptItem.xaml.cs">
+      <DependentUpon>ReceiptItem.xaml</DependentUpon>
     </Compile>
     <Compile Include="ReceiptPage.xaml.cs">
       <DependentUpon>ReceiptPage.xaml</DependentUpon>
@@ -182,9 +188,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="OrderItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Potstickers.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ReceiptItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ReceiptPage.xaml">
       <SubType>Designer</SubType>

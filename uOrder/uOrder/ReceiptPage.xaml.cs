@@ -20,12 +20,14 @@ namespace uOrder
     /// </summary>
     public partial class ReceiptPage : UserControl
     {
-        MenuPage _menu;
+        public double gst;
+        public double subtotal;
+        public double total;
 
         public ReceiptPage()
         {
             InitializeComponent();
-            //_menu = menu;
+
         }
 
         //IGNORE FOR NOW
